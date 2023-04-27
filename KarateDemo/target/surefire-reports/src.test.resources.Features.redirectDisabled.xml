@@ -1,0 +1,14 @@
+<testsuite failures="1" name="src/test/resources/Features/redirectDisabled.feature" skipped="0" tests="1" time="0.011484">
+  <testcase classname="src.test.resources.Features.redirectDisabled" name="1" time="0.011484">
+    <failure message="redirectDisabled.feature:19 - evaluation (js) failed: deep { foo: [ 'b', 'a' ] }, javax.script.ScriptException: &lt;eval&gt;:1:5 Expected ; but found {&#13;&#10;deep { foo: [ 'b', 'a' ] }&#13;&#10;     ^ in &lt;eval&gt; at line number 1 at column number 5&#10;stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:477)">* configure followRedirects = false ....................................... passed
+* def response = { foo: [ 'a', 'b' ] } .................................... passed
+* match response contains only deep { foo: [ 'b', 'a' ] } ................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: redirectDisabled.feature:19 - evaluation (js) failed: deep { foo: [ 'b', 'a' ] }, javax.script.ScriptException: &lt;eval&gt;:1:5 Expected ; but found {&#13;
+deep { foo: [ 'b', 'a' ] }&#13;
+     ^ in &lt;eval&gt; at line number 1 at column number 5
+stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:477)&#13;
+	at ✽.* match response contains only deep { foo: [ 'b', 'a' ] } (redirectDisabled.feature:19)</failure>
+  </testcase>
+</testsuite>
