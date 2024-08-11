@@ -18,12 +18,12 @@ jobs:
           # Configuration file
           # config: # optional, default is .github/slack.yml
           # Specify success, failure, cancelled or a custom status
-          # status: 
+          status: ${{ job.status }}
           # Report on the status of individual steps
           # steps: # optional
           # matrix properties
           # matrix: # optional
           # Override default channel with different channel or username
-          channel: testing # optional
+          channel: '#testing' # optional
           # Override message format for step
           message: testing # optional
